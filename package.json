@@ -1,0 +1,11 @@
+{
+  "name": "samsung-signage-tv",
+  "version": "0.0.1",
+  "description": "Samsung Smart Signage TV integration for Companion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Lang <ldaniell14260@gmail.com>",
+  "license": "MIT"
+}

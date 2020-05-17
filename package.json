@@ -1,7 +1,17 @@
 {
-  "name": "samsung-signage-tv",
+  "name": "samsung-smart-signage-tv",
   "version": "0.0.1",
   "description": "Samsung Smart Signage TV integration for Companion",
+	"manufacturer": "Samsung",
+	"product": "Smart Signage TV",
+  "shortname": "Samsung Smart Signage TV",
+  "keywords": [
+    "Monitor",
+    "TV",
+    "Samsung",
+    "Smart",
+    "Signage"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

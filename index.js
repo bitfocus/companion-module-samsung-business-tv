@@ -7,8 +7,7 @@ function instance(system, id, config) {
 	// super-constructor
 	instance_skel.apply(this, arguments);
 
-	self.actions(); // export actions
-	self.init_presets();
+	self.actions();
 
 	return self;
 }
@@ -116,7 +115,6 @@ instance.prototype.init_variables = function () {
 	];
 
 	self.setVariableDefinitions(variables);
-	self.setVariable('power', 'Off');
 }
 
 instance.prototype.init_presets = function () {
@@ -218,7 +216,7 @@ instance.prototype.init_feedbacks = function () {
 
 	feedbacks['input'] = {
 		label: 'Input change',
-		description: 'Changes the foreground and background color of the back to the active colors if the input changes to the defined input, otherwise the inactive colors are used',
+		description: 'Changes the foreground and background color of the bank to the active colors if the input changes to the defined input, otherwise the inactive colors are used',
 		options: [
 			{
 				type: 'dropdown',
@@ -232,7 +230,7 @@ instance.prototype.init_feedbacks = function () {
 
 	feedbacks['mode'] = {
 		label: 'Mode change',
-		description: 'Changes the foreground and background color of the back to the active colors if the mode changes to the defined mode, otherwise the inactive colors are used',
+		description: 'Changes the foreground and background color of the bank to the active colors if the mode changes to the defined mode, otherwise the inactive colors are used',
 		options: [
 			{
 				type: 'dropdown',
@@ -246,7 +244,7 @@ instance.prototype.init_feedbacks = function () {
 
 	feedbacks['video_wall_mode'] = {
 		label: 'Video Wall change',
-		description: 'Changes the foreground and background color of the back to the active colors if the mode changes to the defined mode, otherwise the inactive colors are used',
+		description: 'Changes the foreground and background color of the bank to the active colors if the mode changes to the defined mode, otherwise the inactive colors are used',
 		options: [
 			{
 				type: 'dropdown',
@@ -260,7 +258,7 @@ instance.prototype.init_feedbacks = function () {
 
 	feedbacks['volume'] = {
 		label: 'Volume change',
-		description: 'Changes the foreground and background color of the back to the active colors if the volume changes to the defined volume, otherwise the inactive colors are used',
+		description: 'Changes the foreground and background color of the bank to the active colors if the volume changes to the defined volume, otherwise the inactive colors are used',
 		options: [
 			{
 				type: 'number',
@@ -275,7 +273,7 @@ instance.prototype.init_feedbacks = function () {
 
 	feedbacks['size'] = {
 		label: 'Size change',
-		description: 'Changes the foreground and background color of the back to the active colors if the size changes to the defined size, otherwise the inactive colors are used',
+		description: 'Changes the foreground and background color of the bank to the active colors if the size changes to the defined size, otherwise the inactive colors are used',
 		options: [
 			{
 				type: 'number',
@@ -290,7 +288,7 @@ instance.prototype.init_feedbacks = function () {
 
 	feedbacks['power'] = {
 		label: 'Power state change',
-		description: 'Changes the foreground and background color of the back to the active colors if the power configuration changes to the defined state, otherwise the inactive colors are used',
+		description: 'Changes the foreground and background color of the bank to the active colors if the power configuration changes to the defined state, otherwise the inactive colors are used',
 		options: [
 			{
 				type: 'dropdown',
@@ -304,7 +302,7 @@ instance.prototype.init_feedbacks = function () {
 
 	feedbacks['pip'] = {
 		label: 'Picture in Picture state change',
-		description: 'Changes the foreground and background color of the back to the active colors if the pciture in picture configuration changes to the defined state, otherwise the inactive colors are used',
+		description: 'Changes the foreground and background color of the bank to the active colors if the pciture in picture configuration changes to the defined state, otherwise the inactive colors are used',
 		options: [
 			{
 				type: 'dropdown',
@@ -318,7 +316,7 @@ instance.prototype.init_feedbacks = function () {
 
 	feedbacks['safety'] = {
 		label: 'Safety Lock state change',
-		description: 'Changes the foreground and background color of the back to the active colors if the safety lock configuration changes to the defined state, otherwise the inactive colors are used',
+		description: 'Changes the foreground and background color of the bank to the active colors if the safety lock configuration changes to the defined state, otherwise the inactive colors are used',
 		options: [
 			{
 				type: 'dropdown',
@@ -332,7 +330,7 @@ instance.prototype.init_feedbacks = function () {
 
 	feedbacks['video_wall'] = {
 		label: 'Video Wall state change',
-		description: 'Changes the foreground and background color of the back to the active colors if the video wall configuration changes to the defined state, otherwise the inactive colors are used',
+		description: 'Changes the foreground and background color of the bank to the active colors if the video wall configuration changes to the defined state, otherwise the inactive colors are used',
 		options: [
 			{
 				type: 'dropdown',
